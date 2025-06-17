@@ -1,27 +1,34 @@
 {
-      "expo": {
-          "name": "Cloxeer",
-              "slug": "cloxeer-app",
-                  "owner": "samuelfranckarnaldo",
-                      "platforms": ["ios", "android", "web"],
-                          "web": {
-                                "output": "static",
-                                      "favicon": "./assets/images/favicon.png"
-                                          },
-                                              "plugins": [
-                                                    "expo-router",
-                                                          [
-                                                                  "expo-splash-screen",
-                                                                          {
-                                                                                    "image": "./assets/images/splash-icon.png",
-                                                                                              "imageWidth": 200,
-                                                                                                        "resizeMode": "contain",
-                                                                                                                  "backgroundColor": "#ffffff"
-                                                                                                                          }
-                                                                                                                                ]
-                                                                                                                                    ],
-                                                                                                                                        "experiments": {
-                                                                                                                                              "typedRoutes": true
-                                                                                                                                                  }
-                                                                                                                                                    }
-                                                                                                                                                    }
+  "expo": {
+    "name": "Cloxeer",
+    "slug": "cloxeer-app",
+    "owner": "samuelfranckarnald",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "platforms": ["ios", "android", "web"],
+    "splash": {
+      "image": "./assets/icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#512da8"  // Roxo escuro bonito
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#512da8"
+      }
+    },
+    "web": {
+      "favicon": "./assets/icon.png"
+    }
+  }
+}
