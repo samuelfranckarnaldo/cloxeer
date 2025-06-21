@@ -2,15 +2,19 @@
   "expo": {
     "name": "Cloxeer",
     "slug": "cloxeer-app",
-    "owner": "samuelfranckarnald",
+    "owner": "samuelfranckarnaldo",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "splash": {
       "image": "./assets/icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#512da8"  // Roxo escuro bonito
+      "backgroundColor": "#512da8"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -25,10 +29,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#512da8"
-      }
+      },
+      "package": "com.samuelfranckarnaldo.cloxeerapp"
     },
     "web": {
       "favicon": "./assets/icon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3ae924fa-2a22-46ff-ab62-7ce378471fa1"
+      }
+    },
+    "plugins": [
+      "expo-localization"
+    ]
   }
 }
